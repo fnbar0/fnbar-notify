@@ -10,7 +10,7 @@ client_script 'client.lua'
 ui_page 'nui/index.html'
 
 files {
-    'nui/index.html',
+    	'nui/index.html',
 	'nui/script.js',
 	'nui/style.css',
 }
