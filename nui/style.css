@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --main: crimson;
+    --background: #141414;
+    --textcolor: white;
+    --duration: 5000ms;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* body
+{
+    background-image: url("https://cdn.wccftech.com/wp-content/uploads/2015/01/bCVF8Lq.jpg"); 
+} */
+
+#notifications {
+    position: fixed;
+    top: 120px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notify
+{
+    background-color: var(--background);
+    background: linear-gradient(90deg, var(--main) -100%, var(--background) 60%);
+    width: 300px;
+    height: fit-content;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0.0;
+}
+
+#notify-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.progressbar
+{
+    height: 4px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: var(--main);
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transition: width var(--duration) linear; */
+    animation: progress var(--duration) linear;
+    filter: drop-shadow(0 0 5px var(--main));
+}
+
+.stack {
+    font-family: 'Outfit', sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: var(--main);
+    height: 20px;
+    width: 20px;
+    filter: drop-shadow(0 0 5px var(--main));
+    color: var(--textcolor);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.0;
+}
+
+#notify-title
+{
+    color: var(--main);
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 20px;
+    filter: drop-shadow(0 0 5px var(--main));
+}
+
+#notify-message
+{
+    color: var(--textcolor);
+    font-family: "Poppins", serif;
+    text-align: left;
+    padding-top: 5px;
+    font-size: 15px;
+    max-height: 98px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    margin-right: 5px;
+}
+
+#notify-icon {
+    margin: auto;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+i {
+    color: var(--main);
+    font-size: 30px;
+    filter: drop-shadow(0 0 5px var(--main));
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+.hide {
+    animation: hide 0.3s linear forwards;
+}
+
+.show {
+    animation: show 0.3s linear forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
