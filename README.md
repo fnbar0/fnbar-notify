@@ -45,7 +45,7 @@ exports['fnbar-notify']:showNotification({
 ```lua
 exports['fnbar-notify']:showNotification({
     message = "You are in the pvp zone!",
-    template = warning
+    template = "warning"
 })
 ```
 
