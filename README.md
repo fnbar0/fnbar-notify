@@ -49,5 +49,5 @@ exports['fnbar-notify']:showNotification({
 })
 ```
 
-<hr>
+<hr></hr>
 ## [Preview](https://www.youtube.com/watch?v=Ec5E5ExfQl8)
