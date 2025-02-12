@@ -1,6 +1,6 @@
 # fnbar-notify
 > [!NOTE]  
-> This HUD is compatible with [fnbar-hud](https://github.com/fnbar0/fnbar-hud), meaning if you also have this resource installed on your server, players can change color of default notification in the hud settings.
+> This HUD is compatible with [fnbar-hud](https://github.com/fnbar0/fnbar-hud), meaning if you also have this resource installed on your server, players can change default colors of notification in the hud settings.
 
 ### FiveM Notify system.
 
