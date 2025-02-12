@@ -39,6 +39,7 @@ exports['fnbar-notify']:showNotification({
     sound = "success"
 })
 ```
+
 ### or
 
 ```lua
@@ -48,4 +49,5 @@ exports['fnbar-notify']:showNotification({
 })
 ```
 
+<hr>
 ## [Preview](https://www.youtube.com/watch?v=Ec5E5ExfQl8)
