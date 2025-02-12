@@ -22,7 +22,7 @@ The `data` table accepts the following properties:
 | `duration`        | `number` | The duration of the notification in milliseconds. **Default: 5000.** |
 | `mainColor`       | `string` | The main color of the notification (e.g., `#FFFFFF`). **Optional.** |
 | `backgroundColor` | `string` | The background color of the notification (e.g., `#000000`). **Optional.** |
-| `icon`            | `string` | A [Font Awesome](https://fontawesome.com/icons) icon name (e.g., `fa-check-circle`). **Optional.** |
+| `icon`            | `string` | A [Font Awesome](https://fontawesome.com/icons) icon name (e.g., `fa-solid fa-circle`). **Optional.** |
 | `template`        | `string` | The notification type: `success`, `error`, `warning`, or `info`. Determines default styling.  **Optional.** |
 | `sound`           | `string` | The sound associated with the notification. Uses the same values as `template` (`success`, `error`, `warning`, `info`). **Optional.** |
 
